@@ -15,7 +15,7 @@ namespace Task4
         private string name;
         private float price;
 
-        private static FileInfo _file = new FileInfo(@"D:\Education\5 семестр\Плаформи корпоративних ІС\Task4\Task4\Model\Orders.txt");
+        private static FileInfo _file = new FileInfo(Directory.GetCurrentDirectory() + @"\Orders.txt");
 
         private static int CountOrders = 0;
 
@@ -69,8 +69,11 @@ namespace Task4
         }
 
 
-        public static ObservableCollection<Dish> ReadDishes(string _file = @"D:\Education\5 семестр\Плаформи корпоративних ІС\Task4\Task4\Model\Data.txt")
+        public static ObservableCollection<Dish> ReadDishes(string _file = "None")
         {
+            if (_file == "None")
+                _file = (Directory.GetCurrentDirectory() + @"\Data.txt");
+
             ObservableCollection< Dish> res = new ObservableCollection<Dish>();
 
             string[] dishes = File.ReadAllLines(_file);
@@ -97,8 +100,11 @@ namespace Task4
             return res;
         }
 
-        public static void WriteDishes(ObservableCollection<Dish> dishes, string _file = @"D:\Education\5 семестр\Плаформи корпоративних ІС\Task4\Task4\Model\Data.txt")
+        public static void WriteDishes(ObservableCollection<Dish> dishes, string _file = "None")
         {
+            if(_file == "None")
+                _file = (Directory.GetCurrentDirectory() + @"\Data.txt");
+
             string[] str_dishes = new string[dishes.Count];
 
             for (int i = 0; i < dishes.Count; i++)

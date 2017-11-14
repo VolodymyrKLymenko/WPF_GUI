@@ -13,3 +13,18 @@ D:\Education\5 семестр\Плаформи корпоративних ІС\T
 D:\Education\5 семестр\Плаформи корпоративних ІС\Task4\Task4\obj\Debug\Task4.csproj.CoreCompileInputs.cache
 D:\Education\5 семестр\Плаформи корпоративних ІС\Task4\Task4\obj\Debug\Task4.exe
 D:\Education\5 семестр\Плаформи корпоративних ІС\Task4\Task4\obj\Debug\Task4.pdb
+C:\Users\Vova\Desktop\WPF_GUI\obj\Debug\Task4.csprojResolveAssemblyReference.cache
+C:\Users\Vova\Desktop\WPF_GUI\obj\Debug\MainWindow.g.cs
+C:\Users\Vova\Desktop\WPF_GUI\obj\Debug\App.g.cs
+C:\Users\Vova\Desktop\WPF_GUI\obj\Debug\Task4_MarkupCompile.cache
+C:\Users\Vova\Desktop\WPF_GUI\obj\Debug\Task4_MarkupCompile.lref
+C:\Users\Vova\Desktop\WPF_GUI\obj\Debug\MainWindow.baml
+C:\Users\Vova\Desktop\WPF_GUI\obj\Debug\Task4.g.resources
+C:\Users\Vova\Desktop\WPF_GUI\obj\Debug\Task4.pdb
+C:\Users\Vova\Desktop\WPF_GUI\bin\Debug\Task4.exe.config
+C:\Users\Vova\Desktop\WPF_GUI\bin\Debug\Task4.exe
+C:\Users\Vova\Desktop\WPF_GUI\bin\Debug\Task4.pdb
+C:\Users\Vova\Desktop\WPF_GUI\obj\Debug\Task4.Properties.Resources.resources
+C:\Users\Vova\Desktop\WPF_GUI\obj\Debug\Task4.csproj.GenerateResource.Cache
+C:\Users\Vova\Desktop\WPF_GUI\obj\Debug\Task4.csproj.CoreCompileInputs.cache
+C:\Users\Vova\Desktop\WPF_GUI\obj\Debug\Task4.exe
