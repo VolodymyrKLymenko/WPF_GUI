@@ -20,14 +20,14 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            
-            <Button Grid.Column="0" Cursor="Hand" Command="{Binding SelectDishCmd}" CommandParameter="{Binding SelectedIndex, ElementName=menu}" Background="LightGray" Content="SELECT" Margin="5" FontSize="20"/>
-            <Button Grid.Column="1" Cursor="Hand" Command="{Binding ResetDishCmd}"  Content="RESET" Background="LightGray" Margin="5" FontSize="20"/>
-            <Button Grid.Column="2" Cursor="Hand" Command="{Binding MakeOrderCommand}"  Content="Make order"  Background="LightGray" Margin="5" FontSize="20"/>
+
+            <Button Grid.Column="0" Cursor="Hand" Command="{Binding SelectDishCmd}" CommandParameter="{Binding SelectedIndex, ElementName=menu}"  IsEnabled="{Binding ElementName= itemsTabe, Path=IsSelected}" Background="LightGray" Content="SELECT" Margin="5" FontSize="20"/>
+            <Button Grid.Column="1" Cursor="Hand" Command="{Binding ResetDishCmd}"  Content="RESET"  IsEnabled="{Binding ElementName= itemsTabe, Path=IsSelected}" Background="LightGray" Margin="5" FontSize="20"/>
+            <Button Grid.Column="2" Cursor="Hand" Command="{Binding MakeOrderCommand}"  Content="Make order"  IsEnabled="{Binding ElementName= itemsTabe, Path=IsSelected}" Background="LightGray" Margin="5" FontSize="20"/>
         </Grid>
 
         <TabControl Grid.Row="1">
-            <TabItem>
+            <TabItem x:Name="itemsTabe">
                 <TabItem.Header>Items</TabItem.Header>
                 <TabItem.Content>
                     <GroupBox Margin="4" Header="Choose type of sushi: ">
@@ -42,7 +42,7 @@
                 </TabItem.Content>
             </TabItem>
 
-            <TabItem>
+            <TabItem x:Name="choiceTabe">
                 <TabItem.Header>Your order</TabItem.Header>
                 <TabItem.Content>
                     <Grid Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10">
